@@ -1,16 +1,15 @@
-import React from 'react'
-import Die from './Die'
+import React, { Component } from 'react'
+import RollDice from './RollDice'
 import './Die.css'
 
-function App () {
-  return (
-    <div className='App'>
-      <Die face='five' />
-      <Die face='four' />
-      <Die face='three' />
-      <Die face='one' />
-    </div>
-  )
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <RollDice />
+      </div>
+    )
+  }
 }
 
 export default App
